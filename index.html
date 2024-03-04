@@ -1,40 +1,63 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaperPocket - Exam Paper Archive</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PaperPocket</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <header>
-        <h1><span class="paper-pocket">PaperPocket</span><br><span class="repository">Exam Paper Archive</span></h1>
-    </header>
-    <div class="container">
-        <section class="search-form">
-            <h2>Search by Year</h2>
-            <form id="searchForm">
-                <input type="text" class="search-input" id="yearInput" placeholder="Enter year...">
-                <button type="submit" class="search-button">Search</button>
-            </form>
-        </section>
-        <section class="list-section" id="searchResults">
-            <!-- Search results will be displayed here -->
-        </section>
-        <section class="introduction">
-            <h2>About</h2>
-            <p>
-                Welcome to PaperPocket! It's like a big library where we keep all the past exam papers for grades 5, 9, and 12.
-            </p>
-            <p>
-                Our job is to store these papers so students like you can easily find and practice them!
-            </p>
-            <p>
-                You can use PaperPocket to prepare for your exams and get better at your subjects!
-            </p>
-        </section>
-    </div>
 
-    <script src="script.js"></script>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>PaperPocket</h1>
+            <small>Exam Paper Archive</small>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:paperpocket0@gmail.com">Contact</a></li>
+                    <li><a href="ToS.html">Terms Of Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-container">
+        <section class="filter-section">
+            <h2>Filter</h2>
+            <div class="filters">
+                <label for="year-filter">Filter by Year:</label>
+                <select id="year-filter">
+                    <option value="all">All Years</option>
+                    <!-- Add options for years -->
+                </select>
+                <br><br>
+                <label for="grade-filter">Filter by Grade:</label>
+                <select id="grade-filter">
+                    <option value="all">All Grades</option>
+                    <!-- Add options for grades -->
+                </select>
+            </div>
+        </section>
+
+        <section class="exam-papers">
+            <h2>Exam Papers</h2>
+            <div id="exam-papers">
+                <!-- Exam papers will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PaperPocket. All rights reserved.</p>
+            <small style="font-size: 8px;">Made with ChatGPT in a rush!</small>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
