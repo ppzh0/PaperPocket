@@ -1,29 +1,26 @@
+// Made with ChatGPT in a rush!
 document.addEventListener('DOMContentLoaded', function () {
     const yearFilter = document.getElementById('year-filter');
     const gradeFilter = document.getElementById('grade-filter');
+    const subjectFiler = document.getElementById('subject-filter');
     const examPapers = document.getElementById('exam-papers');
-
-    // Mock data for exam papers (replace with your actual data)
-    const examData = [
-        { year: '2022', grade: 'grade-10', name: '2022 Grade 10 Math Exam', url: 'brb' },
-        { year: '2022', grade: 'grade-10', name: '2022 Grade 10 Science Exam', url: 'path_to_pdf_file2.pdf' },
-        // Add more exam papers here
-    ];
 
     // Function to render exam papers based on selected filters
     function renderExamPapers() {
         const selectedYear = yearFilter.value;
         const selectedGrade = gradeFilter.value;
+        const selectedSubject = subjectFiler.value;
 
         const filteredPapers = examData.filter(paper => {
             return (selectedYear === 'all' || paper.year === selectedYear) &&
-                (selectedGrade === 'all' || paper.grade === selectedGrade);
+                (selectedGrade === 'all' || paper.grade === selectedGrade) &&
+                (selectedSubject === 'all' || paper.subject === selectedSubject);
         });
 
         examPapers.innerHTML = '';
 
         if (filteredPapers.length === 0) {
-            examPapers.innerHTML = '<p>No exam papers found.</p>';
+            examPapers.innerHTML = "<p>No exam papers found. Some papers aren't here yet! <a href=\"mailto:paperpocket0@gmail.com\">Contribute to make this more accessible!</a></p>";
         } else {
             filteredPapers.forEach(paper => {
                 const paperLink = document.createElement('a');
@@ -43,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listeners for filter changes
     yearFilter.addEventListener('change', renderExamPapers);
     gradeFilter.addEventListener('change', renderExamPapers);
+    subjectFiler.addEventListener('change', renderExamPapers);
 
     // Initial render
     renderExamPapers();

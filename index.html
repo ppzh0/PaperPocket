@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaperPocket</title>
+    <meta name="author" content="ppzh0">
+    <meta name="description"
+        content="PaperPocket is a website where you can access past exam papers for grades 5, 9, and 12. Find exam papers categorized by subject, year, and grade.">
+    <meta name="keywords" content="PaperPocket, exam papers, past papers, education, grades 5, grades 9, grades 12">
+    <title>PaperPocket - Exam Paper Archive</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/manifest.json">
 </head>
 
 <body>
-
+    <script src="assets/data.js"></script>
     <header>
         <div class="container">
             <h1>PaperPocket</h1>
@@ -28,16 +34,34 @@
         <section class="filter-section">
             <h2>Filter</h2>
             <div class="filters">
-                <label for="year-filter">Filter by Year:</label>
-                <select id="year-filter">
-                    <option value="all">All Years</option>
-                    <!-- Add options for years -->
-                </select>
-                <br><br>
                 <label for="grade-filter">Filter by Grade:</label>
                 <select id="grade-filter">
                     <option value="all">All Grades</option>
-                    <!-- Add options for grades -->
+                    <option value="grade-5">Grade 5</option>
+                    <option value="grade-9">Grade 9</option>
+                    <option value="grade-12">Grade 12</option>
+                </select>
+                <br><br>
+                <label for="year-filter">Filter by Year:</label>
+                <select id="year-filter">
+                    <option value="all">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+
+                </select>
+                <br><br>
+                <label for="subject-filter">Filter by Year:</label>
+                <select id="subject-filter">
+                    <option value="all">All Subject</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="english">English</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option>
+                    <option value="Science">Science</option>
                 </select>
             </div>
         </section>
