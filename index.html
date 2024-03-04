@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <script src="assets/data.js"></script>
+    <!-- <script src="assets/examData.json"></script> -->
     <header>
         <div class="container">
             <h1>PaperPocket</h1>
@@ -32,42 +32,63 @@
 
     <main class="container main-container">
         <section class="filter-section">
-            <h2>Filter</h2>
+            <h2>
+                Filter <br>
+                <small style="font-size: 12px;">use filters for better accuracy!</small>
+            </h2>
             <div class="filters">
                 <label for="grade-filter">Filter by Grade:</label>
                 <select id="grade-filter">
                     <option value="all">All Grades</option>
-                    <option value="grade-5">Grade 5</option>
-                    <option value="grade-9">Grade 9</option>
-                    <option value="grade-12">Grade 12</option>
+                    <option value="Grade-5">Grade 5 ⊘</option>
+                    <option value="Grade-9">Grade 9</option>
+                    <option value="Grade-12">Grade 12 ⊘</option>
+                </select>
+                <br><br>
+                <label for="subject-filter">Filter by Subject:</label>
+                <select id="subject-filter">
+                    <option value="all">All Subject</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="English">English</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option>
+                    <option value="Science">Science</option>
+                </select>
+                <br><br>
+                <label for="place-filter">Filter by Place:</label>
+                <select id="place-filter">
+                    <option value="all">All Places</option>
+                    <option value="Kachin">Kachin</option>
+                    <option value="Kayah">Kayah</option>
+                    <option value="Kayin">Kayin</option>
+                    <option value="Chin">Chin</option>
+                    <option value="Sagaing">Sagaing</option>
+                    <option value="Tanintharyi">Tanintharyi</option>
+                    <option value="Bago">Bago</option>
+                    <option value="Magway">Magway</option>
+                    <option value="Mandalay">Mandalay</option>
+                    <option value="Mon">Mon</option>
+                    <option value="Rakhine">Rakhine</option>
+                    <option value="Yangon">Yangon</option>
+                    <option value="Shan">Shan</option>
+                    <option value="Ayeyarwady">Ayeyarwady</option>
+                    <option value="Naypyidaw">Naypyidaw</option>
                 </select>
                 <br><br>
                 <label for="year-filter">Filter by Year:</label>
                 <select id="year-filter">
                     <option value="all">All Years</option>
                     <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-
-                </select>
-                <br><br>
-                <label for="subject-filter">Filter by Year:</label>
-                <select id="subject-filter">
-                    <option value="all">All Subject</option>
-                    <option value="Myanmar">Myanmar</option>
-                    <option value="english">English</option>
-                    <option value="Mathematics">Mathematics</option>
-                    <option value="Geography">Geography</option>
-                    <option value="History">History</option>
-                    <option value="Science">Science</option>
                 </select>
             </div>
         </section>
 
         <section class="exam-papers">
-            <h2>Exam Papers</h2>
+            <h2>
+                Exam Papers <br>
+                <small style="font-size: 12px;">only available for Grade 9 (Magway) at the moment</small>
+            </h2>
             <div id="exam-papers">
                 <!-- Exam papers will be displayed here -->
             </div>
