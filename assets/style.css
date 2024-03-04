@@ -110,6 +110,16 @@ main {
     padding: 5px;
 }
 
+#exam-papers {
+    display: flex;
+    flex-direction: column;
+}
+
+.exam-paper-link {
+    margin: 4px;
+    padding: 10px 5px;
+}
+
 /* Footer styles */
 footer {
     background-color: #1f1f1f;
