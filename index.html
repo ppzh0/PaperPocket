@@ -8,7 +8,7 @@
     <meta name="description"
         content="PaperPocket is a website where you can access past exam papers for grades 5, 9, and 12. Find exam papers categorized by subject, year, and grade.">
     <meta name="keywords" content="PaperPocket, exam papers, past papers, education, grades 5, grades 9, grades 12">
-    <title>PaperPocket - Exam Paper Archive</title>
+    <title>PaperPocket - စာမေးပွဲ စာရွက်များစုစည်းရာ။</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="assets/manifest.json">
@@ -19,13 +19,13 @@
     <header>
         <div class="container">
             <h1>PaperPocket</h1>
-            <small>Exam Paper Archive</small>
-            <nav>
+            <small>စာမေးပွဲ စာရွက်များစုစည်းရာ။</small>
+            <nav class="t54">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="mailto:paperpocket0@gmail.com">Contact</a></li>
-                    <li><a href="ToS.html">Terms Of Services</a></li>
+                    <li><a href="/">ပင်မ</a></li>
+                    <li><a href="about.html">ကျွန်ုပ်တို့အကြောင်း</a></li>
+                    <li><a href="mailto:paperpocket0@gmail.com">ဆက်သွယ်ရန်</a></li> <br id="separator">
+                    <li><a href="ToS.html">လိုက်နာရန်အချက်များ</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,61 +34,61 @@
     <main class="container main-container">
         <section class="filter-section">
             <h2>
-                Filter <br>
-                <small style="font-size: 12px;">use filters for better accuracy!</small>
+                စစ်ထုတ်ရန် <br>
+                <small style="font-size: 12px;">ပိုမိုတိကျသော ရလဒ်များအတွက် စစ်ထုတ်ခြင်းပြုလုပ်ပါ။</small>
             </h2>
             <div class="filters">
-                <label for="grade-filter">Filter by Grade:</label>
+                <label for="grade-filter">အတန်း:</label>
                 <select id="grade-filter">
-                    <option value="all">All Grades</option>
+                    <option value="all">အားလုံးပြရန်</option>
                     <option value="Grade-5">Grade 5 ⊘</option>
                     <option value="Grade-9">Grade 9</option>
                     <option value="Grade-12">Grade 12 ⊘</option>
                 </select>
                 <br><br>
-                <label for="subject-filter">Filter by Subject:</label>
+                <label for="subject-filter">ဘာသာရပ်:</label>
                 <select id="subject-filter">
-                    <option value="all">All Subject</option>
-                    <option value="Myanmar">Myanmar</option>
-                    <option value="English">English</option>
-                    <option value="Mathematics">Mathematics</option>
-                    <option value="Geography">Geography</option>
-                    <option value="History">History</option>
-                    <option value="Science">Science</option>
+                    <option value="all">အားလုံးပြရန်</option>
+                    <option value="Myanmar">မြန်မာ</option>
+                    <option value="English">အင်္ဂလိပ်</option>
+                    <option value="Mathematics">သင်္ချာ</option>
+                    <option value="Geography">ပထဝီ</option>
+                    <option value="History">သမိုင်း</option>
+                    <option value="Science">သိပ္ပံ</option>
                 </select>
                 <br><br>
-                <label for="place-filter">Filter by Place:</label>
+                <label for="place-filter">နေရာ:</label>
                 <select id="place-filter">
-                    <option value="all">All Places</option>
-                    <option value="Kachin">Kachin</option>
-                    <option value="Kayah">Kayah</option>
-                    <option value="Kayin">Kayin</option>
-                    <option value="Chin">Chin</option>
-                    <option value="Sagaing">Sagaing</option>
-                    <option value="Tanintharyi">Tanintharyi</option>
-                    <option value="Bago">Bago</option>
-                    <option value="Magway">Magway</option>
-                    <option value="Mandalay">Mandalay</option>
-                    <option value="Mon">Mon</option>
-                    <option value="Rakhine">Rakhine</option>
-                    <option value="Yangon">Yangon</option>
-                    <option value="Shan">Shan</option>
-                    <option value="Ayeyarwady">Ayeyarwady</option>
-                    <option value="Naypyidaw">Naypyidaw</option>
+                    <option value="all">အားလုံးပြရန်</option>
+                    <option value="Kachin">ကချင််ပြည်နယ်</option>
+                    <option value="Kayah">ကယားပြည်နယ်</option>
+                    <option value="Kayin">ကရင်ပြည်နယ်</option>
+                    <option value="Chin">ချင်းပြည်နယ်</option>
+                    <option value="Sagain">စစ်ကိုင်းတိုင်း</option>
+                    <option value="Tanintharyi">တနင်္သာရီတိုင်း</option>
+                    <option value="Bago">ပဲခူးတိုင်း</option>
+                    <option value="Magway">မကွေးတိုင်း</option>
+                    <option value="Mandalay">မန္တလေးတိုင်း</option>
+                    <option value="Mon">မွန်ပြည်နယ်</option>
+                    <option value="Rakhine">ရခိုင်ပြည်နယ်</option>
+                    <option value="Yangon">ရန်ကုန်တိုင်း</option>
+                    <option value="Shan">ရှမ်းပြည်နယ်</option>
+                    <option value="Ayeyarwady">ဧရာဝတီတိုင်း</option>
+                    <option value="Naypyidaw">နေပြည်တော်</potion>
                 </select>
                 <br><br>
-                <label for="year-filter">Filter by Year:</label>
+                <label for="year-filter">ခုနှစ်:</label>
                 <select id="year-filter">
-                    <option value="all">All Years</option>
-                    <option value="2024">2024</option>
+                    <option value="all">အားလုံးပြရန်</option>
+                    <option value="2024">၂၀၂၄</option>
                 </select>
             </div>
         </section>
 
         <section class="exam-papers">
             <h2>
-                Exam Papers <br>
-                <small style="font-size: 12px;">only available for Grade 9 (Magway) at the moment</small>
+                မေးခွန်းစာရွက်: <br>
+                <small style="font-size: 12px;">လောလောဆယ် Grade 9 (အင်္ဂလိပ်မပါ၊ မကွေးတိုင်း) အတွက်ပဲ ရနိုင်ပါတယ်။ ကျန်နေတဲ့ တိုင်းတွေနဲ့ ပြည်နယ်တွေအတွက် <a href="mailto:paperpocket0@gmail.com">PaperPocket0</a> မှာ ပို့ပေးခြင်းဖြင့် ကူညီနိုင်ပါတယ်။</small>
             </h2>
             <div id="exam-papers">
                 <!-- Exam papers will be displayed here -->
@@ -99,7 +99,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 PaperPocket. All rights reserved.</p>
-            <small style="font-size: 8px;">Made with ChatGPT in a rush!</small>
+            <small style="font-size: 8px;">ChatGPT ဖြင့်ပြုလုပ်ထားသည်။</small>
         </div>
     </footer>
 
