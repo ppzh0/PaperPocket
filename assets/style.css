@@ -32,6 +32,10 @@ a:hover {
     font-family: "Cambria Math", 'Times New Roman', Times, serif;
 }
 
+em {
+    background-color: yellow;
+}
+
 /* scroll bar styles */
 body::-webkit-scrollbar {
     width: .4em;
