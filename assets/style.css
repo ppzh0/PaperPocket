@@ -15,7 +15,7 @@ body {
 }
 
 a:hover {
-    font-style: oblique;
+    font-weight: bold;
 }
 
 .container {
