@@ -14,10 +14,6 @@ body {
     grid-template-rows: repeat(3, auto);
 }
 
-a:hover {
-    font-weight: bold;
-}
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -33,7 +29,7 @@ a:hover {
 }
 
 em {
-    background-color: yellow;
+    background-color: hsla(60, 100%, 50%, 0.3);
 }
 
 /* scroll bar styles */
@@ -81,10 +77,10 @@ nav ul li:last-child {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    word-break: keep-all;
 }
 
-#separator {
+br.separator {
     display: none;
 }
 
@@ -125,11 +121,6 @@ main {
     padding: 10px 5px;
 }
 
-/* additional styles */
-p.iou {
-    margin-left: 24px;
-}
-
 /* Footer styles */
 footer {
     background-color: #1f1f1f;
@@ -138,13 +129,58 @@ footer {
     padding: 20px 0;
 }
 
+/* additional styles */
+p.iou {
+    margin-left: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:not(.exam-paper-link) {
+    border-bottom: 1px dashed;
+    transition: all .3s ease-in-out;
+}
+
+a:not(.exam-paper-link):hover {
+    border-bottom: 1px solid;
+}
+
+a.exam-paper-link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* for alert box when clicked the copyURL button */
+#alertBox {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; /* fallback */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 1000;
+
+    backdrop-filter: blur(4px);
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 426px) {
     .container {
         width: 90%;
     }
 
-    #separator {
+    br.separator {
         display: block;
+    }
+
+    #alertBox {
+        width: 90%;
     }
 }
