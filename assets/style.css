@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    transition: all .3s ease-in-out;
     /* outline: 1px solid lightblue; */
 }
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Padauk", Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: grid;
@@ -154,12 +157,14 @@ a.exam-paper-link:hover {
 
 /* for alert box when clicked the copyURL button */
 #alertBox {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black; /* fallback */
+    background-color: black;
+    /* fallback */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 16px;
