@@ -65,3 +65,56 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial render
     renderExamPapers();
 });
+
+// FOR COPYING SITE URL
+
+// Function to copy URL and show the alert box
+function copyURL() {
+    const url = window.location.href;
+    const alertBox = document.getElementById("alertBox");
+    try {
+        // Use the Clipboard API for modern browsers
+        if (navigator.clipboard) {
+            navigator.clipboard
+                .writeText(url)
+                .then(() => {
+                    showAlert(alertBox);
+                })
+                .catch((err) => {
+                    console.error("Failed to copy: ", err);
+                    fallbackCopy(url, alertBox);
+                });
+        } else {
+            // Fallback for older browsers (execCommand)
+            fallbackCopy(url, alertBox);
+        }
+    } catch (err) {
+        console.error("Error while copying: ", err);
+        fallbackCopy(url, alertBox);
+    }
+}
+
+// Show the alert box for a set period (4 seconds)
+function showAlert(alertBox) {
+    alertBox.style.display = "block";
+    setTimeout(() => {
+        alertBox.style.display = "none";
+    }, 7000);
+}
+
+// Fallback function using execCommand for older browsers
+function fallbackCopy(url, alertBox) {
+    const textArea = document.createElement("textarea");
+    textArea.value = url;
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999); // For mobile devices
+    try {
+        document.execCommand("copy");
+        showAlert(alertBox);
+    } catch (err) {
+        console.error("Fallback copy failed: ", err);
+    } finally {
+        document.body.removeChild(textArea);
+    }
+}
