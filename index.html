@@ -20,22 +20,28 @@
         <div class="container">
             <h1>PaperPocket</h1>
             <small>စာမေးပွဲ စာရွက်များစုစည်းရာ။</small>
-            <nav class="t54">
+            <nav>
                 <ul>
-                    <li><a href="/">ပင်မ</a></li>
-                    <li><a href="about.html">ကျွန်ုပ်တို့အကြောင်း</a></li>
-                    <li><a href="mailto:paperpocket0@gmail.com">ဆက်သွယ်ရန်</a></li> <br id="separator">
-                    <li><a href="ToS.html">လိုက်နာရန်အချက်များ</a></li>
+                    <li><a href="./">ပင်မစာမျက်နှာ</a></li>
+                    <li><a href="./about.html">ကျွန်ုပ်တို့အကြောင်း</a></li> <br class="separator">
+                    <li><a href="mailto:paperpocket0@gmail.com">ဆက်သွယ်ရန်</a></li>
+                    <li><a href="./ToS.html">လိုက်နာရန်အချက်များ</a></li> <br class="separator">
+                    <li><a href="javascript:void(0);" onclick="copyURL()">မျှဝေခြင်း</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div id="alertBox" role="alert">
+        <p>
+            ဆိုဒ်၏ URL ကို ကူးယူပြီးပါပြီ။ သင်၏ မိတ်ဆွေများဖြင့် အလွယ်တကူ မျှဝေနိုင်ပါသည်။
+        </p>
+    </div>
 
     <main class="container main-container">
         <section class="filter-section">
             <h2>
-                စစ်ထုတ်ရန် <br>
-                <small style="font-size: 12px;">ပိုမိုတိကျသော ရလဒ်များအတွက် စစ်ထုတ်ခြင်းပြုလုပ်ပါ။</small>
+                စစ်ထုတ်ရန်
+                <sub><small style="font-size: 12px;">ပိုမိုတိကျသော ရလဒ်များအတွက် စစ်ထုတ်ခြင်းပြုလုပ်ပါ။</small></sub>
             </h2>
             <div class="filters">
                 <label for="grade-filter">အတန်း:</label>
