@@ -66,6 +66,7 @@ header h1 {
     margin: 0;
 }
 
+/* navbar styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -178,8 +179,69 @@ a.exam-paper-link:hover {
     backdrop-filter: blur(4px);
 }
 
+/* timeline styles, solution: https://codepen.io/NielsVoogt/full/MbMMxv */
+
+.timeline-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item::before {
+    content: attr(date);
+    font-weight: bold;
+
+    position: absolute;
+    left: 2em;
+    top: 1em;
+
+    display: block;
+    font-weight: 700;
+    font-size: 0.785rem;
+}
+
+.timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+
+    position: absolute;
+    top: 1em;
+    left: -6px;
+
+    content: "";
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.timeline-item:last-child {
+    -webkit-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
 /* Responsive styles */
-@media only screen and (max-width: 426px) {
+@media screen and (max-width: 875px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 426px) {
     .container {
         width: 90%;
     }
