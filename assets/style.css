@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+@font-face {
+    font-family: "Padauk";
+    src: url(font/Padauk.woff2);
+}
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
     /* outline: 1px solid lightblue; */
 }
 
