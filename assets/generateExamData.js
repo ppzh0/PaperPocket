@@ -3,8 +3,8 @@ const path = require('path');
 
 // Define lists of subjects, grades, and years
 const subjects = ['Myanmar', 'English', 'Mathematics', 'Geography', 'History', 'Science']; // List of subjects
-const grades = ['Grade-9']; // List of grades
-const years = ['2024']; // List of years
+const grades = ['Grade-9', 'Grade-5']; // List of grades
+const years = ['2024', '2025']; // List of years
 
 // Define list of states and divisions in Myanmar
 const statesAndDivisions = ['Kachin', 'Kayah', 'Kayin', 'Chin', 'Sagaing', 'Tanintharyi', 'Bago', 'Magway', 'Mandalay', 'Mon', 'Rakhine', 'Yangon', 'Shan', 'Ayeyarwady'];
