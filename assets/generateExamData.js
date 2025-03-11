@@ -2,12 +2,38 @@ const fs = require('fs');
 const path = require('path');
 
 // Define lists of subjects, grades, and years
-const subjects = ['Myanmar', 'English', 'Mathematics', 'Geography', 'History', 'Science']; // List of subjects
-const grades = ['Grade-9', 'Grade-5']; // List of grades
+const subjects = [
+    'Myanmar', 
+    'English', 
+    'Mathematics', 
+    'Geography', 
+    'History', 
+    'Science', 
+    'SS', // Social Studies
+    'Chem', 
+    'Phys', 
+    'Bio'
+]; // List of subjects
+const grades = ['Grade-12', 'Grade-9', 'Grade-5']; // List of grades
 const years = ['2024', '2025']; // List of years
 
 // Define list of states and divisions in Myanmar
-const statesAndDivisions = ['Kachin', 'Kayah', 'Kayin', 'Chin', 'Sagaing', 'Tanintharyi', 'Bago', 'Magway', 'Mandalay', 'Mon', 'Rakhine', 'Yangon', 'Shan', 'Ayeyarwady'];
+const statesAndDivisions = [
+    'Kachin', 
+    'Kayah', 
+    'Kayin', 
+    'Chin', 
+    'Sagaing', 
+    'Tanintharyi', 
+    'Bago', 
+    'Magway', 
+    'Mandalay', 
+    'Mon', 
+    'Rakhine', 
+    'Yangon', 
+    'Shan', 
+    'Ayeyarwady'
+];
 
 const examData = [];
 
@@ -38,7 +64,9 @@ statesAndDivisions.forEach(state => {
 const humanReadable = false;
 
 // Write the generated exam data to a JSON file
+console.time('Duration'); // Duration indication start (not necessary, DO NOT REMOVE)
 fs.writeFileSync('examData.json', JSON.stringify(examData, null, humanReadable ? 2 : 0));
+console.timeEnd('Duration'); // Duration indication end (not necessary, DO NOT REMOVE)
 
 console.log('\nExam data generated successfully. Touch some grass! (╯▽╰ ) \n');
 console.log('Papers that do not exist in the papers folder will show up as errors. \nPlease contribute to the papers folder if you have the missing papers.');
