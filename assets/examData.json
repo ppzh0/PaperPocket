@@ -1,58 +1,122 @@
 [
   {
     "name": "Grade 9 - 2025 (မြန်မာစာ) [ ကရင်ပြည်နယ် ]",
-    "url": "./../papers/G09_2025_My_Kayin.pdf"
+    "url": "./../papers/G09_2025_My_Kayin.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "My",
+    "place": "Kayin"
   },
   {
-    "name": "Grade 9 - 2024 (မြန်မာစာ) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2024_My_Magway.pdf"
+    "name": "Grade 9 - 2025 (မြန်မာစာ) [ တနင်္သာရီတိုင်းဒေသကြီး ]",
+    "url": "./../papers/G09_2025_My_Tanintharyi.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "My",
+    "place": "Tanintharyi"
   },
   {
     "name": "Grade 9 - 2025 (မြန်မာစာ) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_My_Magway.pdf"
+    "url": "./../papers/G09_2025_My_Magway.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "My",
+    "place": "Magway"
   },
   {
-    "name": "Grade 9 - 2024 (သင်္ချာ) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2024_Math_Magway.pdf"
+    "name": "Grade 9 - 2024 (မြန်မာစာ) [ မကွေးတိုင်းဒေသကြီး ]",
+    "url": "./../papers/G09_2024_My_Magway.pdf",
+    "grade": "G09",
+    "year": "2024",
+    "subject": "My",
+    "place": "Magway"
   },
   {
     "name": "Grade 9 - 2025 (သင်္ချာ) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_Math_Magway.pdf"
+    "url": "./../papers/G09_2025_Math_Magway.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "Math",
+    "place": "Magway"
   },
   {
-    "name": "Grade 9 - 2024 (ပထဝီဝင်) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2024_Geo_Magway.pdf"
+    "name": "Grade 9 - 2024 (သင်္ချာ) [ မကွေးတိုင်းဒေသကြီး ]",
+    "url": "./../papers/G09_2024_Math_Magway.pdf",
+    "grade": "G09",
+    "year": "2024",
+    "subject": "Math",
+    "place": "Magway"
   },
   {
     "name": "Grade 9 - 2025 (ပထဝီဝင်) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_Geo_Magway.pdf"
+    "url": "./../papers/G09_2025_Geo_Magway.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "Geo",
+    "place": "Magway"
   },
   {
-    "name": "Grade 9 - 2024 (သမိုင်း) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2024_Hist_Magway.pdf"
+    "name": "Grade 9 - 2024 (ပထဝီဝင်) [ မကွေးတိုင်းဒေသကြီး ]",
+    "url": "./../papers/G09_2024_Geo_Magway.pdf",
+    "grade": "G09",
+    "year": "2024",
+    "subject": "Geo",
+    "place": "Magway"
   },
   {
     "name": "Grade 9 - 2025 (သမိုင်း) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_Hist_Magway.pdf"
+    "url": "./../papers/G09_2025_Hist_Magway.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "Hist",
+    "place": "Magway"
   },
   {
-    "name": "Grade 9 - 2024 (သိပ္ပံ) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2024_Sci_Magway.pdf"
+    "name": "Grade 9 - 2024 (သမိုင်း) [ မကွေးတိုင်းဒေသကြီး ]",
+    "url": "./../papers/G09_2024_Hist_Magway.pdf",
+    "grade": "G09",
+    "year": "2024",
+    "subject": "Hist",
+    "place": "Magway"
   },
   {
     "name": "Grade 9 - 2025 (သိပ္ပံ) [ မကွေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_Sci_Magway.pdf"
+    "url": "./../papers/G09_2025_Sci_Magway.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "Sci",
+    "place": "Magway"
+  },
+  {
+    "name": "Grade 9 - 2024 (သိပ္ပံ) [ မကွေးတိုင်းဒေသကြီး ]",
+    "url": "./../papers/G09_2024_Sci_Magway.pdf",
+    "grade": "G09",
+    "year": "2024",
+    "subject": "Sci",
+    "place": "Magway"
   },
   {
     "name": "Grade 9 - 2025 (မြန်မာစာ) [ မန္တလေးတိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_My_Mandalay.pdf"
+    "url": "./../papers/G09_2025_My_Mandalay.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "My",
+    "place": "Mandalay"
   },
   {
     "name": "Grade 9 - 2025 (မြန်မာစာ) [ မွန်ပြည်နယ် ]",
-    "url": "./../papers/G09_2025_My_Mon.pdf"
+    "url": "./../papers/G09_2025_My_Mon.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "My",
+    "place": "Mon"
   },
   {
     "name": "Grade 9 - 2025 (မြန်မာစာ) [ ရန်ကုန်တိုင်းဒေသကြီး ]",
-    "url": "./../papers/G09_2025_My_Yangon.pdf"
+    "url": "./../papers/G09_2025_My_Yangon.pdf",
+    "grade": "G09",
+    "year": "2025",
+    "subject": "My",
+    "place": "Yangon"
   }
 ]

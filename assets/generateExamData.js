@@ -15,9 +15,9 @@ const abbrSubjects = {
 };
 
 const abbrGrades = {
-    'G05': 'Grade 5',
+    'G12': 'Grade 12',
     'G09': 'Grade 9',
-    'G12': 'Grade 12'
+    'G05': 'Grade 5',
 };
 
 const statesAndDivisionsNames = {
