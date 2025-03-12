@@ -1,72 +1,81 @@
 const fs = require('fs');
 const path = require('path');
 
-// Define lists of subjects, grades, and years
-const subjects = [
-    'Myanmar', 
-    'English', 
-    'Mathematics', 
-    'Geography', 
-    'History', 
-    'Science', 
-    'SS', // Social Studies
-    'Chem', 
-    'Phys', 
-    'Bio'
-]; // List of subjects
-const grades = ['Grade-12', 'Grade-9', 'Grade-5']; // List of grades
-const years = ['2024', '2025']; // List of years
+const abbrSubjects = {
+    'My': 'မြန်မာစာ',
+    'Eng': 'English',
+    'Math': 'သင်္ချာ',
+    'Geo': 'ပထဝီဝင်',
+    'Hist': 'သမိုင်း',
+    'Sci': 'သိပ္ပံ',
+    'SS': 'လူမှုရေးဘာသာ',
+    'Chem': 'Chemistry',
+    'Phys': 'Physics',
+    'Bio': 'Biology'
+};
 
-// Define list of states and divisions in Myanmar
-const statesAndDivisions = [
-    'Kachin', 
-    'Kayah', 
-    'Kayin', 
-    'Chin', 
-    'Sagaing', 
-    'Tanintharyi', 
-    'Bago', 
-    'Magway', 
-    'Mandalay', 
-    'Mon', 
-    'Rakhine', 
-    'Yangon', 
-    'Shan', 
-    'Ayeyarwady'
-];
+const abbrGrades = {
+    'G12': 'Grade 12',
+    'G09': 'Grade 9',
+    'G05': 'Grade 5'
+};
+
+const statesAndDivisionsNames = {
+    // 'Kachin': 'ကချင်ပြည်နယ်',
+    // 'Kayah': 'ကယားပြည်နယ်',
+    'Kayin': 'ကရင်ပြည်နယ်',
+    'Chin': 'ချင်းပြည်နယ်',
+    // 'Sagaing': 'စစ်ကိုင်းတိုင်းဒေသကြီး',
+    // 'Tanintharyi': 'တနင်္သာရီတိုင်းဒေသကြီး',
+    'Bago': 'ပဲခူးတိုင်းဒေသကြီး',
+    'Magway': 'မကွေးတိုင်းဒေသကြီး',
+    'Mandalay': 'မန္တလေးတိုင်းဒေသကြီး',
+    'Mon': 'မွန်ပြည်နယ်',
+    // 'Rakhine': 'ရခိုင်ပြည်နယ်',
+    'Yangon': 'ရန်ကုန်တိုင်းဒေသကြီး',
+    'Shan': 'ရှမ်းပြည်နယ်',
+    // 'Ayeyarwady': 'ဧရာဝတီတိုင်းဒေသကြီး',
+    'Naypyitaw': 'နေပြည်တော်'
+};
+
+const subjects = Object.keys(abbrSubjects);
+const grades = Object.keys(abbrGrades);
+const statesAndDivisions = Object.keys(statesAndDivisionsNames);
+const years = ['2024', '2025'];
 
 const examData = [];
 
-// Generate exam data for each state or division
+console.time('Process Time');
 statesAndDivisions.forEach(state => {
     subjects.forEach(subject => {
         grades.forEach(grade => {
             years.forEach(year => {
-                // Generate exam paper name dynamically
-                const examName = `Grade ${grade.split('-')[1]} ${subject} ${year} (${state})`;
-                // Generate exam paper URL dynamically
-                // Papers that do not exist in the papers folder will show up as errors. Please check the console for details.
-                const examUrl = `./../papers/${grade}_${subject}_${year}_${state}.pdf`; // Fixed URL structure
-                const filePath = path.join(__dirname, examUrl);
-                // Check if the file exists
+                const paperInfo = `${abbrGrades[grade]} - ${year} (${abbrSubjects[subject]}) [ ${statesAndDivisionsNames[state]} ]`;
+                const fileName = `${grade}_${year}_${subject}_${state}.pdf`;
+                const fileURL = `./../papers/${fileName}`;
+                const filePath = path.join(__dirname, fileURL);
+
                 if (fs.existsSync(filePath)) {
-                    // Push the generated data to the examData array
-                    examData.push({ year, grade, subject, place: state, name: examName, url: examUrl });
+                    examData.push({ name: paperInfo, url: fileURL });
+                    console.log(`   
+                        \u2705 File found for ${grade} ${subject} for ${state}
+                        `); // File exists!
                 } else {
-                    console.log(`File does not exist: ${filePath}`);
+                    console.log(`\u274C File not found for ${grade} ${subject} for ${state}`); // File missing
                 }
             });
         });
     });
 });
 
-// Flag for JSON formatting: true for human-readable, false for minimized
-const humanReadable = false;
 
-// Write the generated exam data to a JSON file
-console.time('Duration'); // Duration indication start (not necessary, DO NOT REMOVE)
-fs.writeFileSync('examData.json', JSON.stringify(examData, null, humanReadable ? 2 : 0));
-console.timeEnd('Duration'); // Duration indication end (not necessary, DO NOT REMOVE)
+// Check for "--readable" flag
+const humanReadable = process.argv.includes('--readable');
 
-console.log('\nExam data generated successfully. Touch some grass! (╯▽╰ ) \n');
-console.log('Papers that do not exist in the papers folder will show up as errors. \nPlease contribute to the papers folder if you have the missing papers.');
+// Write the generated exam data to a JSON file (force UTF-8 encoding)
+fs.writeFileSync('examData.json', JSON.stringify(examData, null, humanReadable ? 2 : 0), 'utf8');
+
+console.log('\nExam data generated successfully (to root\\assets\\examData.json).');
+if (!humanReadable) console.log('(!) Use the flag \`--readable\` for readable JSON format');
+
+console.timeEnd('Process Time');
