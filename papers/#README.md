@@ -23,7 +23,7 @@ Example:
 /papers/G09_2024_Math_Magway_Minbu.pdf
 ```
 
-| Abbreviation | Meaning   |
+| Abbreviation (in order) | Meaning   |
 |--------------|-----------|
 | G10          | Grade 10  |
 | 2024         | Exam Year |
