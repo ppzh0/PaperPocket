@@ -15,33 +15,33 @@ const abbrSubjects = {
 };
 
 const abbrGrades = {
-    'G12': 'Grade 12',
+    'G05': 'Grade 5',
     'G09': 'Grade 9',
-    'G05': 'Grade 5'
+    'G12': 'Grade 12'
 };
 
 const statesAndDivisionsNames = {
-    // 'Kachin': 'ကချင်ပြည်နယ်',
-    // 'Kayah': 'ကယားပြည်နယ်',
+    'Kachin': 'ကချင်ပြည်နယ်',
+    'Kayah': 'ကယားပြည်နယ်',
     'Kayin': 'ကရင်ပြည်နယ်',
     'Chin': 'ချင်းပြည်နယ်',
-    // 'Sagaing': 'စစ်ကိုင်းတိုင်းဒေသကြီး',
-    // 'Tanintharyi': 'တနင်္သာရီတိုင်းဒေသကြီး',
+    'Sagaing': 'စစ်ကိုင်းတိုင်းဒေသကြီး',
+    'Tanintharyi': 'တနင်္သာရီတိုင်းဒေသကြီး',
     'Bago': 'ပဲခူးတိုင်းဒေသကြီး',
     'Magway': 'မကွေးတိုင်းဒေသကြီး',
     'Mandalay': 'မန္တလေးတိုင်းဒေသကြီး',
     'Mon': 'မွန်ပြည်နယ်',
-    // 'Rakhine': 'ရခိုင်ပြည်နယ်',
+    'Rakhine': 'ရခိုင်ပြည်နယ်',
     'Yangon': 'ရန်ကုန်တိုင်းဒေသကြီး',
     'Shan': 'ရှမ်းပြည်နယ်',
-    // 'Ayeyarwady': 'ဧရာဝတီတိုင်းဒေသကြီး',
+    'Ayeyarwady': 'ဧရာဝတီတိုင်းဒေသကြီး',
     'Naypyitaw': 'နေပြည်တော်'
 };
 
 const subjects = Object.keys(abbrSubjects);
 const grades = Object.keys(abbrGrades);
 const statesAndDivisions = Object.keys(statesAndDivisionsNames);
-const years = ['2024', '2025'];
+const years = ['2025', '2024'];
 
 const examData = [];
 
