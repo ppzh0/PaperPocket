@@ -25,10 +25,10 @@ Example:
 
 | Abbreviation (in order) | Meaning   |
 |--------------|-----------|
-| G10          | Grade 10  |
-| 2024         | Exam Year |
+| G09          | Grade 9   |
+| 2025         | Exam Year |
 | Math         | Subject   |
-| Magway_Minbu | Place[^1] |
+| Yangon_Botahtaung | Place[^1] |
 
 ### Abbreviation Explained (PaperPocket)
 | Abbreviated Word | Whole Word         |
