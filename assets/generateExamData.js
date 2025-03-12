@@ -56,7 +56,14 @@ statesAndDivisions.forEach(state => {
                 const filePath = path.join(__dirname, fileURL);
 
                 if (fs.existsSync(filePath)) {
-                    examData.push({ name: paperInfo, url: fileURL });
+                    examData.push({
+                            name: paperInfo,
+                            url: fileURL,
+                            grade: grade,
+                            year: year,
+                            subject: subject,
+                            place: state
+                    });
                     console.log(`   
                         \u2705 File found for ${grade} ${subject} for ${state}
                         `); // File exists!
