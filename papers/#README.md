@@ -33,7 +33,7 @@ Example:
 ### Abbreviation Explained (PaperPocket)
 | Abbreviated Word | Whole Word         |
 |------------------|--------------------|
-| Mya              | _Myanmar (မြန်မာစာ)_ |
+| My               | _Myanmar (မြန်မာစာ)_ |
 | Eng              | _English (အင်္ဂလိပ်စာ)_ |
 | Math             | _Mathematics (သင်္ချာ)_ |
 | Geo              | _Geography (ပထဝီဝင်)_ |
