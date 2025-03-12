@@ -39,22 +39,33 @@ document.addEventListener('DOMContentLoaded', function () {
             examPapers.innerHTML = '';
 
             if (filteredPapers.length === 0) {
-                examPapers.innerHTML = "<p>No exam papers found. Some papers aren't here yet! <a href=\"mailto:paperpocket0@gmail.com\">Contribute to make this more accessible!</a></p>";
+                const noPapersMessage = document.createElement('p');
+                noPapersMessage.innerHTML = `No exam papers found. Some papers aren't here yet! 
+                <a href="mailto:paperpocket0@gmail.com">Contribute to make this more accessible!</a>`;
+                noPapersMessage.style.opacity = '0'; // Start hidden
+                noPapersMessage.style.transition = 'opacity 0.8s ease-in-out'; // Smooth fade-in
+                examPapers.appendChild(noPapersMessage);
+
+                // Apply fade-in effect after a short delay
+                setTimeout(() => {
+                    noPapersMessage.style.opacity = '1';
+                }, 50);
             } else {
                 filteredPapers.forEach(paper => {
                     const paperLink = document.createElement('a');
                     paperLink.textContent = paper.name;
                     paperLink.href = paper.url;
                     paperLink.classList.add('exam-paper-link');
-                    paperLink.download = ''; // Set download attribute to force download on PC and laptops
+                    paperLink.download = ''; // Enable download on PC
                     examPapers.appendChild(paperLink);
-                    examPapers.appendChild(document.createElement('br')); // Add line break for separation
+                    examPapers.appendChild(document.createElement('br')); // Add line break
                 });
             }
         } catch (error) {
             console.error('Error rendering exam papers:', error);
         }
     }
+
 
     // Event listeners for filter changes
     gradeFilter.addEventListener('change', renderExamPapers);
