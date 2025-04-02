@@ -59,7 +59,7 @@ statesAndDivisions.forEach(state => {
                 const matchedFile = allFiles.find(file => file.startsWith(expectedStart));
 
                 if (matchedFile) {
-                    const paperInfo = `${abbrGrades[grade]} - ${year} (${abbrSubjects[subject]}) [ ${statesAndDivisionsNames[state]} ]`;
+                    const paperInfo = `${abbrGrades[grade]} ~ ${abbrSubjects[subject]} (${year}) ― ${statesAndDivisionsNames[state]}`;
                     const fileURL = `./../papers/${matchedFile}`;
 
                     examData.push({
@@ -102,7 +102,7 @@ if (showFileList) {
     fs.readdirSync(path.join(__dirname, './../papers')).forEach(file => console.log(`  - ${file}`));
 }
 
-console.log('\nExam data generated successfully (saved to root\\assets\\examData.json).');
+console.log('\nExam data generated successfully (saved to root/assets/examData.json).');
 
 // ;-;
 // if (!humanReadable || !showFileList) console.log(`(!) Use flag: 

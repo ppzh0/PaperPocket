@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (filteredPapers.length === 0) {
                 const noPapersMessage = document.createElement('p');
-                noPapersMessage.innerHTML = `No exam papers found. Some papers aren't here yet! 
-                <a href="mailto:paperpocket0@gmail.com">Contribute to make this more accessible!</a>`;
+                noPapersMessage.innerHTML = `<p class="text-body-secondary">မေးခွန်းစာရွက်များမရှိသေးပါ။ No exam papers found. Some papers aren't here yet!</p>
+                <a href="mailto:paperpocket0@gmail.com" class="d-block btn btn-outline-primary">Contribute to make this more accessible!</a>`;
                 noPapersMessage.style.opacity = '0'; // Start hidden
                 noPapersMessage.style.transition = 'opacity 0.8s ease-in-out'; // Smooth fade-in
                 examPapers.appendChild(noPapersMessage);
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const paperLink = document.createElement('a');
                     paperLink.textContent = paper.name;
                     paperLink.href = paper.url;
-                    paperLink.classList.add('exam-paper-link');
+                    paperLink.classList.add('d-inline-flex', 'focus-ring', 'focus-ring-dark', 'py-1', 'px-2', 'my-1', 'link-primary', 'link-offset-2', 'link-underline-opacity-25', 'link-underline-opacity-100-hover');
                     paperLink.download = ''; // Enable download on PC
                     examPapers.appendChild(paperLink);
                     examPapers.appendChild(document.createElement('br')); // Add line break
