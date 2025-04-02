@@ -14,101 +14,275 @@
     <link rel="manifest" href="assets/manifest.json">
 </head>
 
-<body>
-    <header>
-        <div class="container">
-            <h1>PaperPocket</h1>
-            <small>စာမေးပွဲ စာရွက်များစုစည်းရာ။</small>
-            <nav>
-                <nav>
-                    <ul>
-                        <li><a href="./">ပင်မစာမျက်နှာ</a></li>
-                        <li><a href="./about.html">ကျွန်ုပ်တို့အကြောင်း</a></li> <br class="separator">
-                        <li><a href="mailto:paperpocket0@gmail.com">ဆက်သွယ်ရန်</a></li>
-                        <!-- <li><a href="./ToS.html">လိုက်နာရန်အချက်များ</a></li> <br class="separator"> -->
-                        <li><a href="./timeline/">Timeline</a></li>
-                        <!-- <li><a href="javascript:void(0);" onclick="copyURL()">မျှဝေခြင်း</a></li> -->
-                    </ul>
-                </nav>
-            </nav>
+<body class="lh-lg">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-bottom sticky-md-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./favicon.ico" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                PaperPocket
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mb-2 mb-lg-0 nav-underline justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./">ပင်မစာမျက်နှာ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./ToS.html">လိုက်နာရန်အချက်များ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ကျွန်ုပ်တို့အကြောင်း</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:paperpocket0@gmail.com">ဆက်သွယ်ရန်</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./timeline/">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-link" href="javascript:void(0);" data-bs-toggle="modal"
+                            data-bs-target="#unavailable">
+                            PaperPocket AR
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                <path fill-rule="evenodd"
+                                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h2.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-link" href="javascript:void(0);" onclick="copyURL()"
+                            data-bs-toggle="modal" data-bs-target="#clipboardNotice">
+                            Share Us
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-share" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container main-container ToS">
-        <h2>Conditions of Service</h2>
-        <p>
-            Greetings from PaperPocket! Your use of the PaperPocket website (the "Service") is governed by these Terms
-            of Service ("Terms"). You accept these Terms by using the Service or by accessing it.
-        </p>
-        <div>
-            <h3>1. Utilizing the Services</h3>
-            <p class="iou">
-                <span class="sub-header">1.1. Access and Use:</span> Exam papers may be accessed or downloaded using the
-                Service for individual, non-commercial use.
-            </p>
-            <p class="iou">
-                <span class="sub-header">1.2. Prohibition on Commercial utilize:</span> Without prior authorization, you
-                are not permitted to utilize the exam papers for any commercial purpose.
-            </p>
+
+    <!-- Clipboard Notice Modal -->
+    <div class="modal fade" id="clipboardNotice" tabindex="-1" aria-labelledby="copiedToClipboard" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title fs-5 fw-bold" id="copiedToClipboard">
+                        <i class="bi bi-clipboard2-check text-success"></i>
+                        Site URL successfully copied!
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        ဆိုဒ်၏ URL ကို clipboard ထဲသို့ကူးယူပြီးပါပြီ။ သင်၏ မိတ်ဆွေများနှင့် အလွယ်တကူ
+                        မျှဝေနိုင်ပါပြီ။
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <ul class="nav d-flex justify-content-center list-unstyled">
+                        <li class="ms-3">
+                            <span class="text-muted">Share us on:</span>
+                        </li>
+                        <li class="ms-3">
+                            <a target="_blank" class="text-primary"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://paperpocket.vercel.app">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a target="_blank" class="text-black"
+                                href="https://twitter.com/intent/tweet?text=Check%20out%20this%20website%20where%20you%20can%20download%20past%20exam%20papers%20for%20Myanmar%20curriculum.%0A%0Ahttps://paperpocket.vercel.app%0A%0APaperPocket%20is%20a%20non-profit%20organization.%20They%20store%20and%20share%20exam%20papers%20on%20their%20website!%20I%20hope%20it%20is%20useful%20for%20you.">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a target="_blank" class="text-danger"
+                                href="http://pinterest.com/pin/create/button/?url=https://paperpocket.vercel.app&description=Check%20out%20this%20website%20where%20you%20can%20download%20past%20exam%20papers%20for%20Myanmar%20curriculum.%0A%0Ahttps://paperpocket.vercel.app%0A%0APaperPocket%20is%20a%20non-profit%20organization.%20They%20store%20and%20share%20exam%20papers%20on%20their%20website!%20I%20hope%20it%20is%20useful%20for%20you.&media=https://paperpocket.vercel.app/assets/img/thumbnail.png">
+                                <i class="bi bi-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a target="_blank" class="text-success"
+                                href="mailto:?subject=Check%20Out%20This%20Website%20for%20Myanmar%20Exam%20Papers&body=Hello!%0A%0ACheck%20out%20this%20website%20where%20you%20can%20download%20past%20exam%20papers%20for%20Myanmar%20curriculum.%0A%0Ahttps://paperpocket.vercel.app%0A%0APaperPocket%20is%20a%20non-profit%20organization.%20They%20store%20and%20share%20exam%20papers%20on%20their%20website!%20I%20hope%20it%20is%20useful%20for%20you.">
+                                <i class="bi bi-envelope-at"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://www.reddit.com/" class="text-warning">
+                                <i class="bi bi-reddit"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://www.tiktok.com/" class="text-light text-bg-dark rounded-circle px-1 py-0">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://instagram.com/" class="text-danger-emphasis">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>2. Attribution and Copyright</h3>
-            <p class="iou">
-                <span class="sub-header">2.1. Ownership:</span> The creators or licensors of any exam paper that is made
-                available on the Service are the owners of that paper.
-            </p>
-            <p class="iou">
-                <span class="sub-header">2.2. Attribution:</span> If you use or share exam papers from the Service, you
-                agree to provide appropriate
-                attribution by crediting PaperPocket or including a reference to the website.
-            </p>
+    </div>
+    <!-- Not Available Modal -->
+    <div class="modal fade" id="unavailable" tabindex="-1" aria-labelledby="requestUnavailable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title fs-5 fw-bold" id="requestUnavailable">
+                        <i class="bi bi-x-octagon"></i>
+                        Request Unavailable
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        PaperPocket AR (Additional Resources) သည် ကျောင်းသူကျောင်းသားများအတွက်
+                        သင်ထောက်ကူပြုရင်းမြစ်များကို စုစည်းမျှဝေမည့်ဝက်ဘ်ဆိုက်ဖြစ်ပါသည်။ ၎င်းဝက်ဘ်ဆိုက်သည်
+                        ယခုအချိန်တွင် ဆောက်လုပ်ဆဲ ဖြစ်သည့်အတွက် သင်၏ တောင်းဆိုချက်ကို မလုပ်ဆောင်နိုင်သေးပါ။
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <small>
+                        Powered By <a href="https://sites.google.com/" target="_blank" rel="noopener noreferrer">Google
+                            Sites</a>
+                    </small>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>3. Explanation of Law</h3>
-            <p class="iou">
-                <span class="sub-header">3.1. Accuracy of Information:</span> We make every effort to publish accurate
-                and current information; but, we make no guarantees or representations of any kind, either explicit or
-                implicit, regarding the availability, completeness, accuracy, suitability, or reliability of the
-                information on the Service.
+    </div>
+
+    <main class="container-fluid" id="ToS">
+        <article class="aBlockOfText mx-auto pt-4">
+            <h1>Conditions of Service</h1>
+            <p>
+                Greetings from PaperPocket! Your use of the PaperPocket website (the "Service") is governed by these
+                Terms of Service ("Terms"). You accept these Terms by using the Service or by accessing it.
             </p>
-            <p class="iou">
-                <span class="sub-header">3.2. Legal Compliance:</span> We disclaim all liability and responsibility for
-                the propriety or legality of the exam papers shared on the Service. It is the users' responsibility to
-                make sure that their usage of the exam papers complies with all relevant legal requirements.
-            </p>
-        </div>
-        <div>
-            <h3>4. Liability Restrictions</h3>
-            <p class="iou">
-                <span class="sub-header">4.1. Liability Exclusion:</span> Under no circumstances will PaperPocket, its
-                affiliates, or its partners be responsible for any indirect, incidental, special, consequential,
-                punitive, or loss of income or profit resulting from or related to your use of the Service.
-            </p>
-        </div>
-        <div>
-            <h3>5. Changes to the Terms</h3>
-            <p class="iou">
-                <span class="sub-header">5.1. Terms Modification and Revision:</span> We maintain the Right to amend or
-                update these Terms at any time. Any modifications will take effect right away after they are posted on
-                the service. If there are any changes, you agree to the updated Terms by continuing to use the service.
-            </p>
-        </div>
-        <div>
-            <h3>6. Get in Touch</h3>
-            <p class="iou">
-                <span class="sub-header">6.1. Questions and problems:</span> Please get in touch with at <a
-                    href="mailto:paperpocket0@gmail.com">PaperPocket Official Support</a> if you have any questions or
-                problems regarding these Terms.
-            </p>
-        </div>
+            <div>
+                <h2>1. Utilizing the Services</h2>
+                <p class="iou">
+                    <span class="sub-header">1.1. Access and Use:</span> Exam papers may be accessed or downloaded using
+                    the Service for individual, non-commercial use.
+                </p>
+                <p class="iou">
+                    <span class="sub-header">1.2. Prohibition on Commercial utilize:</span> Without prior authorization,
+                    you are not permitted to utilize the exam papers for any commercial purpose.
+                </p>
+            </div>
+            <div>
+                <h2>2. Attribution and Copyright</h2>
+                <p class="iou">
+                    <span class="sub-header">2.1. Ownership:</span> The creators or licensors of any exam paper that is
+                    made available on the Service are the owners of that paper.
+                </p>
+                <p class="iou">
+                    <span class="sub-header">2.2. Attribution:</span> If you use or share exam papers from the Service,
+                    you agree to provide appropriate attribution by crediting PaperPocket or including a reference to
+                    the website.
+                </p>
+            </div>
+            <div>
+                <h2>3. Explanation of Law</h2>
+                <p class="iou">
+                    <span class="sub-header">3.1. Accuracy of Information:</span> We make every effort to publish
+                    accurate and current information; but, we make no guarantees or representations of any kind, either
+                    explicit or implicit, regarding the availability, completeness, accuracy, suitability, or
+                    reliability of the information on the Service.
+                </p>
+                <p class="iou">
+                    <span class="sub-header">3.2. Legal Compliance:</span> We disclaim all liability and responsibility
+                    for the propriety or legality of the exam papers shared on the Service. It is the users'
+                    responsibility to make sure that their usage of the exam papers complies with all relevant legal
+                    requirements.
+                </p>
+            </div>
+            <div>
+                <h2>4. Liability Restrictions</h2>
+                <p class="iou">
+                    <span class="sub-header">4.1. Liability Exclusion:</span> Under no circumstances will PaperPocket,
+                    its affiliates, or its partners be responsible for any indirect, incidental, special, consequential,
+                    punitive, or loss of income or profit resulting from or related to your use of the Service.
+                </p>
+            </div>
+            <div>
+                <h2>5. Changes to the Terms</h2>
+                <p class="iou">
+                    <span class="sub-header">5.1. Terms Modification and Revision:</span> We maintain the Right to amend
+                    or update these Terms at any time. Any modifications will take effect right away after they are
+                    posted on the service. If there are any changes, you agree to the updated Terms by continuing to use
+                    the service.
+                </p>
+            </div>
+            <div>
+                <h2>6. Get in Touch</h2>
+                <p class="iou">
+                    <span class="sub-header">6.1. Questions and problems:</span> Please get in touch with at <a
+                        href="mailto:paperpocket0@gmail.com">PaperPocket Official Support</a> if you have any questions
+                    or problems regarding these Terms.
+                </p>
+            </div>
+        </article>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 PaperPocket. All rights reserved.</p>
-            <small style="font-size: 8px;">Made with ChatGPT in a rush!</small>
+    <footer class="container-fluid border-top py-3 mt-5 d-flex flex-wrap justify-content-around">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img src="./favicon.ico" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <span class="mb-2 mb-md-0 text-body-secondary">© 2024 &horbar; 2025 PaperPocket. <br
+                    class="d-sm-block d-md-none"> All rights reserved.</span>
         </div>
+        <ul class="nav col-md-4 justify-content-end align-self-end list-unstyled d-flex mb-1">
+            <li class="ms-3">
+                <span class="text-muted">Share us on:</span>
+            </li>
+            <li class="ms-3">
+                <a target="_blank" class="text-primary"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://paperpocket.vercel.app">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a target="_blank" class="text-black"
+                    href="https://twitter.com/intent/tweet?text=Check%20out%20this%20website%20where%20you%20can%20download%20past%20exam%20papers%20for%20Myanmar%20curriculum.%0A%0Ahttps://paperpocket.vercel.app%0A%0APaperPocket%20is%20a%20non-profit%20organization.%20They%20store%20and%20share%20exam%20papers%20on%20their%20website!%20I%20hope%20it%20is%20useful%20for%20you.">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a target="_blank" class="text-danger"
+                    href="http://pinterest.com/pin/create/button/?url=https://paperpocket.vercel.app&description=Check%20out%20this%20website%20where%20you%20can%20download%20past%20exam%20papers%20for%20Myanmar%20curriculum.%0A%0Ahttps://paperpocket.vercel.app%0A%0APaperPocket%20is%20a%20non-profit%20organization.%20They%20store%20and%20share%20exam%20papers%20on%20their%20website!%20I%20hope%20it%20is%20useful%20for%20you.&media=https://paperpocket.vercel.app/assets/img/thumbnail.png">
+                    <i class="bi bi-pinterest"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a target="_blank" class="text-success"
+                    href="mailto:?subject=Check%20Out%20This%20Website%20for%20Myanmar%20Exam%20Papers&body=Hello!%0A%0ACheck%20out%20this%20website%20where%20you%20can%20download%20past%20exam%20papers%20for%20Myanmar%20curriculum.%0A%0Ahttps://paperpocket.vercel.app%0A%0APaperPocket%20is%20a%20non-profit%20organization.%20They%20store%20and%20share%20exam%20papers%20on%20their%20website!%20I%20hope%20it%20is%20useful%20for%20you.">
+                    <i class="bi bi-envelope-at"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
+    <article class="mb-5 pb-4 container-fluid d-flex flex-wrap justify-content-center text-center">
+        <small style="font-size: 8px;">Made with ChatGPT in a rush! <br>Revised by <a href="https://github.com/ppzh0"
+                target="_blank" rel="noopener noreferrer">Jr. Pancake</a></small>
+    </article>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
