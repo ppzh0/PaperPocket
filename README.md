@@ -7,10 +7,10 @@ Our main goal is to make studies more fast and accessible to every students and 
 ## Grades!
 We will be keeping the exam papers of grade 5, grade 9, ~~and grade 12~~. Right now, we only have a small portion of exam papers of those grades.
 
-## Contributors
+<!-- ## Contributors
 ### Papers
 Magway: [ppzh0](https://github.com/ppzh0)
 ### Translations
-Burmese Translations: [Isaiah Jonathan](https://github.com/jonathanisaiah)
+Burmese Translations: [Isaiah Jonathan](https://github.com/jonathanisaiah) -->
 <!-- ## legitimacy
 trust me bro. i have suffered enough -->
