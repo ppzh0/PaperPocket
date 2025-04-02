@@ -21,8 +21,8 @@
 }
 
 /* General Styles */
-.ToS {
-    font-family: "Cambria Math", 'Times New Roman', Times, serif;
+#ToS {
+    font-family: "Cambria Math", 'Times New Roman', Times, serif !important;
 }
 
 em {
