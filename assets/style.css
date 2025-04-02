@@ -99,3 +99,25 @@ p.iou {
     -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
+
+article.aBlockOfText {
+    width: 624px;
+}
+
+@media screen and (max-width: 875px) {
+    article.aBlockOfText {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    article.aBlockOfText {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    article.aBlockOfText {
+        width: 90%;
+    }
+}
