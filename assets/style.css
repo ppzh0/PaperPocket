@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 @font-face {
     font-family: "Padauk";
     src: url(./font/Padauk.woff2);
@@ -19,7 +21,7 @@
 }
 
 #exam-papers>a[class*="focus-ring-dark"]:hover::after {
-    content: url(../node_modules/bootstrap-icons/icons/download.svg);
+    content: url(./icon/download.svg);
     margin-left: .25rem;
     display: inline-block;
 }
