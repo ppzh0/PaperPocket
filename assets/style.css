@@ -22,7 +22,10 @@
 
 #exam-papers>a[class*="focus-ring-dark"]:hover::after {
     content: url(./icon/download.svg);
-    margin-left: .25rem;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    margin-left: .05rem;
     display: inline-block;
 }
 
