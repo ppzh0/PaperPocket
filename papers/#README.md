@@ -10,7 +10,7 @@ Each exam paper follows a structured format to maintain consistency and allow fo
 /papers/{Grade}_{Year}_{Subject}_{Place}.pdf
 ```
 
-Grade `(GXX)`: Represents the academic level (e.g., G08 for Grade 8).
+Grade `(GXX)`: Represents the academic level (e.g., G09 for Grade 9).
 
 Year `(YYYY)`: The year the exam was conducted or released.
 
@@ -44,13 +44,13 @@ Example:
 | Bio              | _Biology (ဇီဝဗေဒ)_ |
 
 ## 📌 Why This Structure?
-- 🗂 Easy Sorting: Exams are sorted alphabetically by Grade → Year → Subject → Place for quick access.
+- 🗂 Easy Sorting: Exams are sorted alphabetically by Grade → Year → Subject → Place for quick access, prioritizing Year and Subject as there are many places with different variations of one exam paper.
 
 - 🔍 Efficient Search (Cons): We assumed that the user do not care if there is a folder structure or not. The content of the file is only useful 
 
-- 🚀 Optimized Storage: Short file and folder names prevent file system errors caused by long paths.
+- _🚀 Optimized Storage (Cons, no idea how to do this): Short file and folder names prevent file system errors caused by long paths_.
 
-- 🤖 Backend-Friendly: Designed for seamless integration with databases and automated retrieval systems.
+- _🤖 Backend-Friendly: Designed for seamless integration with databases and automated retrieval systems_.
 
 
 [^1]: In Myanmar, there are 7 states and 7 divisions, 14 in total. Thus, the naming convention has to come down to the actual exam papers that was made for the state or division. The naming convention will be further developed from older repositories.
