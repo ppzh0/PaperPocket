@@ -21,8 +21,16 @@ trust me bro. i have suffered enough -->
 PaperPocket is a website that stores and shares past exam papers for Grade 12, Grade 9, and Grade 5 of the Myanmar curriculum. The website launched its service on March 1, 2024. PaperPocket operates as an NPO though there aren't many people working on it. This project is independent from monetary gain.
 
 The website is live at [https://paperpocket.vercel.app](https://paperpocket.vercel.app)
+
+> For workflow runs and `development` branch previews;
+> 
+> [![pages-build-deployment](https://github.com/ppzh0/PaperPocket/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/ppzh0/PaperPocket/actions/workflows/pages/pages-build-deployment) 
+> [![Netlify Status](https://api.netlify.com/api/v1/badges/2ab3d6ca-7766-4cfa-a74e-19da10b0901e/deploy-status)](https://app.netlify.com/projects/paperpocket/deploys)
+
+
 ## How was this developed?
-This project heavily relies on artificial intelligence (AI), specifically [ChatGPT](https://openai.com/chatgpt/overview/) developed by [OpenAI](https://openai.com). There were significant changes made into the development after the first draft. The site now uses Bootstrap for consistent performance across all platforms though it still retains the "*Made with ChatGPT in a rush!*" footnote.
+This project heavily relies on artificial intelligence (AI), specifically [ChatGPT](https://openai.com/chatgpt/overview/) developed by [OpenAI](https://openai.com). There were significant changes made into the development after the first draft. The site now uses Bootstrap for consistent performance across all platforms though it still retains the footnote:
+> *Made with ChatGPT in a rush!*
 ## What about the contents?
 The contents in this project were carefully collected from Facebook pages, groups and from actual physical copies of the exam papers and modified to fit into A4 standards. The papers has been edited for the sole purpose of distributing only the questions and exam formats.
 ## What is the purpose?
