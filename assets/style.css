@@ -121,3 +121,32 @@ article.aBlockOfText {
         width: 90%;
     }
 }
+
+/* URLCopy Modal */
+.url-copy-mobile-modal {
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.url-copy-mobile-modal input,
+.url-copy-mobile-modal button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 12px !important;
+}
+
+.url-copy-mobile-modal button:active {
+    transform: scale(0.98) !important;
+}
+
+/* iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .url-copy-mobile-modal {
+        padding-top: env(safe-area-inset-top) !important;
+        padding-bottom: env(safe-area-inset-bottom) !important;
+    }
+    
+    .url-copy-mobile-modal input {
+        font-size: 16px !important; /* Prevents iOS zoom */
+    }
+}
