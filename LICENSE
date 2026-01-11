@@ -1,9 +1,6 @@
-MIT License was added to give people full access to edit, modify, update, 
-fix, merge or contribute the project after the commit `3cf856572e8fad02e8a2719d8eacfad11d42a135`.
+MIT License
 
----
-
-Copyright (c) 2024 Pancake
+Copyright (c) 2024 The Unbaked Pancake
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,9 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-## Copyright for content
-Copyright for content (`.pdf` files) included in the project is as stated in 
-[Terms of Use](https://paperpocket.vercel.app/ToS.html) page. The content 
-copyright is subjected to change according to said page.
