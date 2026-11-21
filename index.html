@@ -163,8 +163,8 @@
                             <option value="SS">လူမှုရေး</option>
                             <hr class="dropdown-divider">
                             <option value="Chem">Chemistry</option>
-                            <option value="Phys">Physics</option>
-                            <option value="Bio">Biology</option>
+                            <option style="color: darkgray;" disabled  value="Phys">Physics</option>
+                            <option style="color: darkgray;" disabled  value="Bio">Biology</option>
                         </select>
                     </div>
                     <div class="input-group mb-3">
@@ -188,20 +188,20 @@
                         <label class="input-group-text" for="place-filter">နေရာရွေးချယ်ရန်</label>
                         <select class="form-select" id="place-filter">
                             <option selected value="all">အားလုံးပြရန်</option>
-                            <option value="Kachin">ကချင််ပြည်နယ်</option>
-                            <option value="Kayah">ကယားပြည်နယ်</option>
+                            <option style="color: darkgray;" disabled value="Kachin">ကချင််ပြည်နယ်</option>
+                            <option style="color: darkgray;" disabled value="Kayah">ကယားပြည်နယ်</option>
                             <option value="Kayin">ကရင်ပြည်နယ်</option>
-                            <option value="Chin">ချင်းပြည်နယ်</option>
-                            <option value="Sagain">စစ်ကိုင်းတိုင်း</option>
+                            <option style="color: darkgray;" disabled value="Chin">ချင်းပြည်နယ်</option>
+                            <option style="color: darkgray;" disabled value="Sagain">စစ်ကိုင်းတိုင်း</option>
                             <option value="Tanintharyi">တနင်္သာရီတိုင်း</option>
                             <option value="Bago">ပဲခူးတိုင်း</option>
                             <option value="Magway">မကွေးတိုင်း</option>
                             <option value="Mandalay">မန္တလေးတိုင်း</option>
                             <option value="Mon">မွန်ပြည်နယ်</option>
-                            <option value="Rakhine">ရခိုင်ပြည်နယ်</option>
+                            <option style="color: darkgray;" disabled value="Rakhine">ရခိုင်ပြည်နယ်</option>
                             <option value="Yangon">ရန်ကုန်တိုင်း</option>
                             <option value="Shan">ရှမ်းပြည်နယ်</option>
-                            <option value="Ayeyarwady">ဧရာဝတီတိုင်း</option>
+                            <option style="color: darkgray;" disabled value="Ayeyarwady">ဧရာဝတီတိုင်း</option>
                             <option value="Naypyidaw">နေပြည်တော်</potion>
                         </select>
                     </div>
@@ -211,6 +211,13 @@
             <section class="pt-3 col-12 col-md-8 border-start border-2 border-primary-subtle" id="content">
                 <div class="mb-2 mb-md-4">
                     <h2>မေးခွန်းစာရွက်များ &horbar;</h2>
+                    <!-- START: Notice for the users -->
+                    <div class="alert alert-link alert-info alert-dismissible fade show" role="alert">
+                        <a href="https://www.youtube.com/watch?v=I0I78N7tCe4" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-link">ဝက်ဘက်ဆိုဒ်အသုံးပြုပုံ ကြည့်ရန်။</a>
+                        <button type="button" class="btn-close position-absolute" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                         <p style="font-size: small;margin-bottom: 0;">
                             ရရှိနိုင်သော မေးခွန်းဟောင်း အားလုံးကိုဖော်ပြထားသည်။ လိုအပ်သည့်မေးခွန်းကို ရှာမတွေ့လျှင်
@@ -225,9 +232,10 @@
                     </div>
                     <small style="font-size: 12px;">
                         ကျန်နေတဲ့ တိုင်းတွေနဲ့ပြည်နယ်တွေအတွက် <a href="mailto:paperpocket0@gmail.com"
-                            target="_blank">paperpocket0@gmail.com</a> ကို မေးခွန်းစာရွက်များ (digital
-                        copy) ပေးပို့ခြင်းဖြင့် တစ်ဖက်တစ်လမ်းမှ ကူညီနိုင်ပါတယ်။
+                            target="_blank">paperpocket0@gmail.com</a> ကို <strong>မေးခွန်းစာရွက်များ (digital copy)
+                            ပေးပို့ခြင်းဖြင့်</strong> တစ်ဖက်တစ်လမ်းမှ ကူညီနိုင်ပါတယ်။
                     </small>
+                    <!-- END: Notice for the users -->
                 </div>
                 <section>
                     <div id="exam-papers" class="container-fluid ">
